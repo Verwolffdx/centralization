@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+/* 
+body {
+    background-color: #36404A;
+} */
+
+table {
+    text-align: center
+}
+
+td {
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+}
+
+th {
+    color: rgb(0, 255, 76);
+    padding: 2px;
+    font-size: 20px;
+}

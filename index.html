@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralization</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="input">
+            <form class="size" name="test" method="post">
+                <p>
+                    <b>Размер:</b>
+                </p>
+                <p>
+                <input type="text" class = "matrix-size" size="1">
+                </p>
+        
+            </form>
+            <table class="matrix-inputs"></table>
+        </div>
+     
+        <div class="btn">
+            <input type="button" onclick="createMatrixInputs(document.querySelector('.matrix-inputs'))" value="Сгенерировать матрицу">
+            
+            <input type="button" onclick="centralization()" value="Вывести">
+
+            <!-- <input type="button" onclick="centralization()" value="test"> -->
+
+        </div>
+        
+        </br>
+        <div class="out">
+            <table width="50%">
+                <tr>
+                    <td>
+                        <table class="dataEntryOr"></table>
+                        <div align="left" class = "centralizationOr"></div>
+                        <br>
+                    </td>
+                    <td>
+                        <table class="dataEntryNonOr"></table>
+                        <div align="left" class = "centralizationNonOr"></div>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+            
+
+
+        </div>
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

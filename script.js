@@ -55,6 +55,7 @@ function getMatrixValues(matrixInputs) {
     return res
 }
 
+//получение неориентированного графа
 function getNonoriented (matrix) {
   for (var i = 0; i < matrix.length; i++) {
     for (var j = 0; j < matrix.length; j++) {
@@ -75,6 +76,7 @@ function getNonoriented (matrix) {
   return matrix;
 }
 
+//расчет показателей цетрализации
 function centralization () {
   var matrix = getMatrixValues(matrixInputs);
   // var size = document.getElementsByClassName("matrix-size")[0].value;
@@ -226,6 +228,7 @@ function centralization () {
 
 }
 
+//поиск кратчайших путей
 function search_path(matrix) 
 { 
   var size = matrix.length;
@@ -261,8 +264,6 @@ function search_path(matrix)
 
   return paths;
 } 
-
-
 
 function BellmanFord(graph, V, E, src) {
   var dis = [V]; 
